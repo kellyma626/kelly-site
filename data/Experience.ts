@@ -1,0 +1,58 @@
+export const exp = [
+  {
+    date: "June 2026 - August 2026",
+    role: "Software Engineer Intern",
+    company: "Wells Fargo",
+    bullets: [
+      "Built responsive websites using React, Next.js, and Tailwind, improving event access for 100+ club members.",
+      "Identified recurring production inconsistencies from hardcoded event data; developed reusable components to automate rendering, removed 250+ lines of redundant code, and initiated a broader cleanup across the codebase.",
+      "Coordinated with 9 developers in weekly Agile scrums to prioritize features and enhance mobile responsiveness.",
+    ],
+    tech: ["React Native", "Expo", "TypeScript"],
+    github: "#",
+    demo: "#",
+    figma: "#",
+  },
+  {
+    date: "June 2026 - August 2026",
+    role: "Software Engineer Intern",
+    company: "Wells Fargo",
+    bullets: [
+      "Built responsive websites using React, Next.js, and Tailwind, improving event access for 100+ club members.",
+      "Identified recurring production inconsistencies from hardcoded event data; developed reusable components to automate rendering, removed 250+ lines of redundant code, and initiated a broader cleanup across the codebase.",
+      "Coordinated with 9 developers in weekly Agile scrums to prioritize features and enhance mobile responsiveness.",
+    ],
+    tech: ["React Native", "Expo", "TypeScript"],
+    github: "#",
+    demo: "#",
+    figma: "#",
+  },
+  {
+    date: "June 2026 - August 2026",
+    role: "Software Engineer Intern",
+    company: "Wells Fargo",
+    bullets: [
+      "Built responsive websites using React, Next.js, and Tailwind, improving event access for 100+ club members.",
+      "Identified recurring production inconsistencies from hardcoded event data; developed reusable components to automate rendering, removed 250+ lines of redundant code, and initiated a broader cleanup across the codebase.",
+      "Coordinated with 9 developers in weekly Agile scrums to prioritize features and enhance mobile responsiveness.",
+    ],
+    tech: ["React Native", "Expo", "TypeScript"],
+    github: "#",
+    demo: "#",
+    figma: "#",
+  },
+  {
+    date: "June 2026 - August 2026",
+    role: "Software Engineer Intern",
+    company: "Wells Fargo",
+    bullets: [
+      "Built responsive websites using React, Next.js, and Tailwind, improving event access for 100+ club members.",
+      "Identified recurring production inconsistencies from hardcoded event data; developed reusable components to automate rendering, removed 250+ lines of redundant code, and initiated a broader cleanup across the codebase.",
+      "Coordinated with 9 developers in weekly Agile scrums to prioritize features and enhance mobile responsiveness.",
+    ],
+    tech: ["React Native", "Expo", "TypeScript"],
+    github: "#",
+    demo: "#",
+    figma: "#",
+  },
+];
