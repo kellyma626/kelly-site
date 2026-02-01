@@ -5,7 +5,7 @@ import "./globals.css";
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["500", "600", "700", "800", "900"],
 });
 
 const dmSerif = DM_Serif_Text({
@@ -26,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dmSans.variable} ${dmSerif.variable} antialiased`}
-      >
+      <body className={`${dmSans.variable} ${dmSerif.variable} antialiased`}>
         {children}
       </body>
     </html>
