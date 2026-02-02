@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Text } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} ${dmSerif.variable} antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>

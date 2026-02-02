@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <div className="bg-white px-30 py-15">
+    <section id="projects" className="bg-white px-30 py-15">
       <div className="flex flex-col justify-center items-center mb-10">
         <div className="text-kelly-pink-500">My work</div>
         <div className="font-dmSerif text-5xl">Featured Projects</div>
@@ -42,16 +42,16 @@ const Projects = () => {
             </li>
           </ul>
           <div className="flex">
-            <div className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1">
+            <div className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1 text-sm">
               Skill 1
             </div>
-            <div className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1">
+            <div className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1 text-sm">
               Skill 2
             </div>
-            <div className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1">
+            <div className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1 text-sm">
               Skill 3
             </div>
-            <div className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1">
+            <div className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1 text-sm">
               Skill 4
             </div>
           </div>
@@ -104,7 +104,7 @@ const Projects = () => {
             <div className="flex">
               {proj.tech.map((t, i) => (
                 <div
-                  className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1"
+                  className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1 text-sm"
                   key={i}
                 >
                   {t}
@@ -141,7 +141,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 export default Projects;

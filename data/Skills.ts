@@ -36,7 +36,7 @@ export const skills = [
       "Matplotlib/Seaborn",
       "Keras",
       "PyTorch",
-      "Tensorflow",
+      "TensorFlow",
     ],
   },
 ];

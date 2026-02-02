@@ -6,7 +6,10 @@ import Kelly from "@/public/kelly.jpg";
 
 const Hero = () => {
   return (
-    <div className="flex justify-center items-center h-screen space-x-5 mr-15">
+    <section
+      id="home"
+      className="flex justify-center items-center h-screen space-x-5 mr-15"
+    >
       <div className="text-right space-y-3">
         <div className="text-kelly-pink-500 translate-x-10">
           Welcome to my personal portfolio website!
@@ -57,7 +60,7 @@ const Hero = () => {
         width={300}
         className="float-right rounded-full border-5 border-kelly-pink-100"
       />
-    </div>
+    </section>
   );
 };
 

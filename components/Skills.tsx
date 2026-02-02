@@ -2,7 +2,7 @@ import { skills } from "@/data/Skills";
 
 const Skills = () => {
   return (
-    <div className="bg-white p-15">
+    <section id="skills" className="bg-white p-30">
       <div className="flex flex-col justify-center items-center mb-15">
         <div className="text-kelly-pink-500">My techstack</div>
         <div className="font-dmSerif text-5xl">Technical Skills</div>
@@ -13,7 +13,7 @@ const Skills = () => {
             <div className="font-dmSerif text-xl">{skill.type}:</div>
             {skill.list.map((s, i) => (
               <div
-                className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1"
+                className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1 text-sm"
                 key={i}
               >
                 {s}
@@ -22,7 +22,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
