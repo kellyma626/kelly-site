@@ -1,11 +1,12 @@
 import { exp } from "@/data/Experience";
+import { CiCalendar } from "react-icons/ci";
 
 const Experience = () => {
   return (
     <section id="experience" className="bg-light p-15 px-50">
       <div className="flex flex-col justify-center items-center mb-15">
-        <div className="text-kelly-pink-500">My journey</div>
-        <div className="font-dmSerif text-5xl">Experience</div>
+        <div className="text-kelly-pink-500">My timeline</div>
+        <div className="font-dmSerif text-6xl">Experience</div>
       </div>
 
       <div className="relative flex flex-col origin-center w-full px-20">
@@ -15,10 +16,14 @@ const Experience = () => {
             className={`flex flex-col ${idx % 2 != 0 ? "items-end translate-x-20" : "-translate-x-20"}`}
           >
             <div
-              className={`absolute h-72 w-1 bg-kelly-pink-100 left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
+              className={`absolute h-74 w-1 bg-kelly-pink-100 left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
             />
-            <div className="bg-white w-1/2 rounded-lg border-2 border-kelly-pink-100 p-4 space-y-1">
-              <div className="text-right text-xs">{exp.date}</div>
+            <div className="bg-white w-1/2 rounded-xl border-2 border-kelly-pink-100 p-4 space-y-1 hover:shadow-md">
+              <div className="flex items-center">
+                <CiCalendar className="mr-1" size="20" />
+                <div className="">{exp.date}</div>
+              </div>
+
               <div className="font-dmSerif text-2xl">{exp.role}</div>
               <div className="text-kelly-pink-500">{exp.company}</div>
               <div

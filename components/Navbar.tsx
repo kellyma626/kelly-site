@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="flex gap-4 justify-between">
         <ScrollLink
           to="#home"
-          className="flex cursor-pointer font-bold text-kelly-pink-500 hover:text-kelly-pink-300 pl-10"
+          className="flex cursor-pointer font-bold hover:text-kelly-pink-300 pl-10"
         >
           <PiFlowerDuotone size={20} className="pr-1" />
           <div>kelly ma</div>

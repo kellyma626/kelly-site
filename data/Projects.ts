@@ -1,5 +1,20 @@
 export const projects = [
   {
+    img: "/craft3.png",
+    date: "February 2026 - Present",
+    title: "E-commerce Website",
+    bullets: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    ],
+    tech: ["Work in Progress"],
+    github: "https://github.com/kellyma626/cutieMood",
+    demo: "https://simoncun.vercel.app/",
+    figma:
+      "https://www.figma.com/design/ujCZhMzQUkYCyiH01JbsVT/UniversalCraftWebsite?t=38jQC6Lpvxg8gLi7-0",
+  },
+  {
     img: "/cutie1.png",
     date: "July 2025 - August 2025",
     title: "Cutie Mood",
