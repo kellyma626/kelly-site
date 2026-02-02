@@ -15,7 +15,7 @@ export const projects = [
       "https://www.figma.com/design/ujCZhMzQUkYCyiH01JbsVT/UniversalCraftWebsite?t=38jQC6Lpvxg8gLi7-0",
   },
   {
-    img: "/cutie1.png",
+    img: "/cutie3.png",
     date: "July 2025 - August 2025",
     title: "Cutie Mood",
     bullets: [
@@ -30,7 +30,7 @@ export const projects = [
       "https://www.figma.com/design/8qEH5FPASlsNVuYBc2FZyQ/cutieMood-draft?node-id=0-1&t=38jQC6Lpvxg8gLi7-1",
   },
   {
-    img: "/cave1.png",
+    img: "/cave2.png",
     date: "October 2024 - December 2024",
     title: "Cave Adventure",
     bullets: [
