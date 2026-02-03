@@ -4,7 +4,10 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-white px-30 py-15">
+    <section
+      id="projects"
+      className="relative bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] px-30 py-15"
+    >
       <div className="flex flex-col justify-center items-center mb-10">
         <div className="text-kelly-pink-500">My work</div>
         <div className="font-dmSerif text-6xl">Featured Projects</div>
@@ -17,8 +20,8 @@ const Projects = () => {
         <Image
           src="/craft3.png"
           alt="E-commerce Website"
-          width="400"
-          height="400"
+          width="350"
+          height="350"
           className="rounded-xl w-fit mr-10"
         />
         <div className="space-y-3">

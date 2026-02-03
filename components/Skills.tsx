@@ -2,7 +2,10 @@ import { skills } from "@/data/Skills";
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-white py-15 px-30">
+    <section
+      id="skills"
+      className="bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] py-15 px-30"
+    >
       <div className="flex flex-col justify-center items-center mb-15">
         <div className="text-kelly-pink-500">My techstack</div>
         <div className="font-dmSerif text-6xl">Technical Skills</div>

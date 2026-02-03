@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex justify-center items-center h-screen space-x-5 mr-15"
+      className="bg-[linear-gradient(135deg,#fdf4f5_0%,#f9f7f4_50%,#f7edf0_100%)] w-full flex justify-center items-center h-screen space-x-5 mr-15"
     >
       <div className="text-right space-y-3">
         <div className="text-kelly-pink-500 translate-x-10">

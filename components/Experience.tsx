@@ -3,7 +3,10 @@ import { CiCalendar } from "react-icons/ci";
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-light p-15 px-50">
+    <section
+      id="experience"
+      className="bg-[linear-gradient(135deg,#fdf4f5_0%,#f9f7f4_50%,#f7edf0_100%)] p-15 px-50"
+    >
       <div className="flex flex-col justify-center items-center mb-15">
         <div className="text-kelly-pink-500">My timeline</div>
         <div className="font-dmSerif text-6xl">Experience</div>
@@ -18,7 +21,7 @@ const Experience = () => {
             <div
               className={`absolute h-74 w-1 bg-kelly-pink-100 left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
             />
-            <div className="bg-white w-1/2 rounded-xl border-2 border-kelly-pink-100 p-4 space-y-1 hover:shadow-md">
+            <div className="bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] w-1/2 rounded-xl border-2 border-kelly-pink-100 p-4 space-y-1 hover:shadow-md">
               <div className="flex items-center">
                 <CiCalendar className="mr-1" size="20" />
                 <div className="">{exp.date}</div>
