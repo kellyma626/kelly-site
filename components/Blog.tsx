@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <section id="skills" className="bg-kelly-sage py-15 px-30">
+    <section id="blog" className="bg-kelly-sage py-15 px-30">
       <div className="flex flex-col justify-center items-center mb-15">
-        <div className="text-kelly-pink-300">My writing</div>
+        <div className="text-kelly-pink-300">Coming soon</div>
         <div className="font-dmSerif text-6xl text-light">Kelly's Blog</div>
       </div>
       <div className="z-5 bg-kelly-pink-300/80 w-fit px-2 py-1 rounded-full mx-1 translate-y-4 translate-x-10">

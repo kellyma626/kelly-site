@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope, FaFile } from "react-icons/fa";
 import Kelly from "@/public/kelly.jpg";
-import Field from "@/public/field.jpeg";
+import Field from "@/public/field2.svg";
 
 const Hero = () => {
   return (
     <section id="home" className="">
-      <div className="bg-light w-full flex justify-center items-center space-x-5 mr-15 mt-35">
+      <div className="bg-light w-full flex justify-center items-center space-x-5 mr-15 pt-35">
         <div className="text-right space-y-3">
           <div className="text-kelly-pink-500 translate-x-10">
             Welcome to my personal portfolio website!
@@ -66,7 +66,7 @@ const Hero = () => {
 
       <Image
         src={Field}
-        alt="Kelly"
+        alt="Field"
         height={100000}
         width={100000}
         className="-my-15"

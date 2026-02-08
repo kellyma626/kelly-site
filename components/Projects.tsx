@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section id="projects" className="relative bg-kelly-sage px-30 py-15">
       <div className="flex flex-col justify-center items-center mb-10">
-        <div className="text-kelly-pink-500">My work</div>
+        <div className="text-kelly-pink-300">My work</div>
         <div className="font-dmSerif text-6xl text-light">
           Featured Projects
         </div>

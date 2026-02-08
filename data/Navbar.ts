@@ -4,8 +4,8 @@ export const tags = [
     link: "#home",
   },
   {
-    name: "skills",
-    link: "#skills",
+    name: "blog",
+    link: "#blog",
   },
   {
     name: "experience",
