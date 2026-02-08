@@ -11,9 +11,7 @@
   --color-kelly-pink-100: #f1dce3;
   --color-kelly-pink-300: #f3b6c8;
   --color-kelly-pink-500: #efa3bc;
-  --color-secondary: #f7e9ed;
-  --color-accent: #e49aae;
-  --color-muted: #f8f4f0;
+  --color-kelly-sage: #2f6c73;
 }
 
 @media (prefers-color-scheme: dark) {

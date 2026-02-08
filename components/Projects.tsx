@@ -4,15 +4,14 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="relative bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] px-30 py-15"
-    >
+    <section id="projects" className="relative bg-kelly-sage px-30 py-15">
       <div className="flex flex-col justify-center items-center mb-10">
         <div className="text-kelly-pink-500">My work</div>
-        <div className="font-dmSerif text-6xl">Featured Projects</div>
+        <div className="font-dmSerif text-6xl text-light">
+          Featured Projects
+        </div>
       </div>
-      <div className="z-5 bg-kelly-pink-100/80 w-fit px-2 py-1 rounded-full mx-1 translate-y-4 translate-x-10">
+      <div className="z-5 bg-kelly-pink-300/80 w-fit px-2 py-1 rounded-full mx-1 translate-y-4 translate-x-10">
         Coming Soon
       </div>
 
@@ -80,7 +79,7 @@ const Projects = () => {
           >
             <Image
               src={proj.img}
-              alt="proj.title"
+              alt={proj.title}
               width="1000"
               height="1000"
               className="rounded-xl w-fit"
