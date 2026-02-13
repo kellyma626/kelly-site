@@ -1,5 +1,6 @@
 export const exp = [
   {
+    img: "/wf-logo9.png",
     date: "Summer 2026",
     role: "Software Engineer Intern",
     company: "Wells Fargo",
@@ -7,6 +8,7 @@ export const exp = [
     tech: ["Internship"],
   },
   {
+    img: "/btt-logo.png",
     date: "May 2025 - Present",
     role: "Artificial Intelligence Fellow",
     company: "Break Through Tech AI @ Cornell Tech",
@@ -23,14 +25,16 @@ export const exp = [
     ],
   },
   {
+    img: "/gwc-logo.png",
     date: "February 2026 - March 2026",
-    role: "Generative AI Fundamentals Nanodegree Scholarship Recipient",
+    role: "Generative AI Fundamentals Nanodegree Scholar",
     company:
       "Build Forward: An Accenture LearnVantage × Girls Who Code Program",
     description: "Excited to learn more about Gen AI!",
     tech: ["Generative AI"],
   },
   {
+    img: "/cra-logo.png",
     date: "October 2024 - December 2025",
     role: "Undergraduate Research Assistant",
     company: "UCR x Computing Research Association",
@@ -39,6 +43,7 @@ export const exp = [
     tech: ["NumPy", "Pandas", "scikit-learn", "Matplotlib/Seaborn"],
   },
   {
+    img: "/acm-logo5.png",
     date: "February 2026 - March 2026",
     role: "Web Developer",
     company: "Association for Computing Machinery @ UCR",

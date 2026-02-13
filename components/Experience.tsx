@@ -1,5 +1,6 @@
 import { exp } from "@/data/Experience";
 import { CiCalendar } from "react-icons/ci";
+import Image from "next/image";
 
 const Experience = () => {
   return (
@@ -16,22 +17,34 @@ const Experience = () => {
             className={`flex flex-col ${idx % 2 != 0 ? "items-end translate-x-20" : "-translate-x-20"}`}
           >
             <div
-              className={`absolute h-74 w-1 bg-kelly-pink-100 left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
+              className={`absolute h-81 w-1 bg-kelly-pink-100 left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
             />
             <div className="bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] w-1/2 rounded-xl border-2 border-kelly-pink-100 p-4 space-y-1 hover:shadow-md">
-              <div className="flex items-center">
-                <CiCalendar className="mr-1" size="20" />
-                <div className="">{exp.date}</div>
+              <div className="flex justify-between">
+                <Image
+                  src={exp.img}
+                  alt={exp.company}
+                  width={1000}
+                  height={1000}
+                  className="object-contain w-1/4"
+                />
+                <div className="flex items-center">
+                  <div className="flex items-center">
+                    <CiCalendar className="mr-1" size="20" />
+                    <div className="">{exp.date}</div>
+                  </div>
+                </div>
               </div>
 
               <div className="font-dmSerif text-2xl">{exp.role}</div>
+
               <div className="text-kelly-pink-500">{exp.company}</div>
               <div
                 className={`absolute bg-kelly-pink-100 h-5 w-5 rounded-full top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-22" : "translate-x-18"}`}
               />
               <div>{exp.description}</div>
 
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap -ml-1">
                 {exp.tech.map((t, i) => (
                   <div
                     className="bg-kelly-pink-100 w-fit px-2 py-1 my-0.5 rounded-full mx-1 text-sm"

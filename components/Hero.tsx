@@ -24,8 +24,8 @@ const Hero = () => {
             Computer Science Student @ UC Riverside
           </div>
           <div className="translate-x-3">
-            Interested in Software Development, UI/UX Design,
-            <br /> & Artificial Intelligence/Machine Learning.
+            Interested in Software Development & <br /> Artificial
+            Intelligence/Machine Learning.
           </div>
           <div className="flex gap-8 justify-end -translate-x-5 text-kelly-pink-500">
             <Link
