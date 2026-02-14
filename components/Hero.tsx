@@ -4,15 +4,20 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope, FaFile } from "react-icons/fa";
 import Kelly from "@/public/kelly.jpg";
 import Field from "@/public/field2.svg";
+import Clouds from "@/public/cloud5.svg";
 
 const Hero = () => {
   return (
     <section id="home" className="">
-      <div className="bg-light w-full flex justify-center items-center space-x-5 mr-15 pt-35">
+      <Image
+        src={Clouds}
+        alt="Clouds"
+        height={100000}
+        width={100000}
+        className="absolute opacity-50 z-0 -mt-5"
+      />
+      <div className="relative w-full flex justify-center items-center space-x-5 mr-15 pt-35">
         <div className="text-right space-y-3">
-          <div className="text-kelly-pink-500 translate-x-10">
-            Welcome to my personal portfolio website!
-          </div>
           <div className="font-dmSerif text-8xl flex gap-7 justify-end">
             Hi, I'm
             <div className="text-kelly-pink-500 text-shadow-md text-shadow-pink-200">
@@ -69,7 +74,7 @@ const Hero = () => {
         alt="Field"
         height={100000}
         width={100000}
-        className="-my-15"
+        className="-my-15 relative"
       />
     </section>
   );
