@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope, FaFile } from "react-icons/fa";
-import Kelly from "@/public/kelly6.jpg";
+import Kelly from "@/public/kelly7.jpg";
 import Field from "@/public/field2.svg";
 import Clouds from "@/public/cloud5.svg";
 

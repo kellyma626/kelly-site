@@ -41,13 +41,13 @@ const Experience = () => {
 
               <div className="text-kelly-pink-500">{exp.company}</div>
               <Image
-                  src={Flower}
-                  alt="Flower"
-                  height={1000}
-                  width={1000}
-                  className={`absolute h-8 w-8 top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-23" : "translate-x-17"}`}
-                />
-            
+                src={Flower}
+                alt="Flower"
+                height={1000}
+                width={1000}
+                className={`absolute h-8 w-8 top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-23" : "translate-x-17"}`}
+              />
+
               <div>{exp.description}</div>
 
               <div className="flex flex-wrap -ml-1">
