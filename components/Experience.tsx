@@ -1,6 +1,7 @@
 import { exp } from "@/data/Experience";
 import { CiCalendar } from "react-icons/ci";
 import Image from "next/image";
+import Flower from "@/public/flower1.svg";
 
 const Experience = () => {
   return (
@@ -39,9 +40,14 @@ const Experience = () => {
               <div className="font-dmSerif text-2xl">{exp.role}</div>
 
               <div className="text-kelly-pink-500">{exp.company}</div>
-              <div
-                className={`absolute bg-kelly-pink-100 h-5 w-5 rounded-full top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-22" : "translate-x-18"}`}
-              />
+              <Image
+                  src={Flower}
+                  alt="Flower"
+                  height={1000}
+                  width={1000}
+                  className={`absolute h-8 w-8 top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-23" : "translate-x-17"}`}
+                />
+            
               <div>{exp.description}</div>
 
               <div className="flex flex-wrap -ml-1">
