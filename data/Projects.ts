@@ -19,7 +19,7 @@ export const projects = [
     github: "https://github.com/kellyma626/cutieMood",
     demo: "#",
     figma:
-      "https://www.figma.com/design/8qEH5FPASlsNVuYBc2FZyQ/cutieMood-draft?node-id=0-1&t=38jQC6Lpvxg8gLi7-1",
+      "https://www.figma.com/design/8qEH5FPASlsNVuYBc2FZyQ/cutieMood-draft?node-id=0-1&t=npMhr6xVpHKHReIx-1",
   },
   {
     img: "/cave4.png",

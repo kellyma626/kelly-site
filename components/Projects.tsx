@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { projects } from "@/data/Projects";
+import { FaGithub, FaFigma } from "react-icons/fa";
+import { IoIosLink } from "react-icons/io";
+
 import Link from "next/link";
 
 const Projects = () => {
@@ -38,31 +41,31 @@ const Projects = () => {
                 </div>
               ))}
             </div>
-            <div className="space-x-2 pt-2">
+            <div className="flex space-x-2 pt-2">
               <Link
-                className="hover:bg-kelly-pink-300 bg-kelly-pink-500 text-white px-5 py-2 rounded-full"
+                className="hover:text-kelly-pink-300"
                 href={proj.github}
                 target="_blank"
               >
-                GitHub
+                <FaGithub size={28} />
               </Link>
 
               {proj.demo && proj.demo !== "#" && (
                 <Link
-                  className="hover:bg-kelly-pink-100 bg-white border-2 border-kelly-pink-500 px-5 py-2 rounded-full"
+                  className="hover:text-kelly-pink-300"
                   href={proj.demo}
                   target="_blank"
                 >
-                  Live Demo
+                  <IoIosLink size={28} />
                 </Link>
               )}
               {proj.figma && proj.figma !== "#" && (
                 <Link
-                  className="hover:text-kelly-pink-300 underline"
+                  className="hover:text-kelly-pink-300"
                   href={proj.figma}
                   target="_blank"
                 >
-                  Figma
+                  <FaFigma size={28} />
                 </Link>
               )}
             </div>

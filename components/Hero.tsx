@@ -14,7 +14,7 @@ const Hero = () => {
         alt="Clouds"
         height={100000}
         width={100000}
-        className="absolute opacity-100 z-0 -mt-5"
+        className="absolute opacity-50 z-0"
       />
       <div className="relative w-full flex justify-center items-center space-x-5 mr-15 pt-35">
         <div className="text-right space-y-3">
@@ -32,7 +32,7 @@ const Hero = () => {
             Interested in Software Development & <br /> Artificial
             Intelligence/Machine Learning.
           </div>
-          <div className="flex gap-8 justify-end -translate-x-5 text-kelly-pink-500">
+          <div className="z-10 flex gap-8 justify-end -translate-x-5 text-kelly-pink-500">
             <Link
               className="hover:text-kelly-pink-300"
               href="https://github.com/kellyma626"
@@ -43,18 +43,21 @@ const Hero = () => {
             <Link
               className="hover:text-kelly-pink-300"
               href="https://www.linkedin.com/in/kellyma626/"
+              target="_blank"
             >
               <FaLinkedin size={38} />
             </Link>
             <Link
               className="hover:text-kelly-pink-300"
               href="mailto:kellyma.dev@gmail.com"
+              target="_blank"
             >
               <FaEnvelope size={38} />
             </Link>
             <Link
               className="hover:text-kelly-pink-300"
               href="/Kelly_Ma_Resume.pdf"
+              target="_blank"
             >
               <FaFile size={38} />
             </Link>
@@ -74,7 +77,7 @@ const Hero = () => {
         alt="Field"
         height={100000}
         width={100000}
-        className="-my-15 relative"
+        className="-my-8 relative"
       />
     </section>
   );
