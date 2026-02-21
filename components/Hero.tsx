@@ -8,13 +8,13 @@ import Clouds from "@/public/cloud5.svg";
 
 const Hero = () => {
   return (
-    <section id="home" className="bg-[#7393B3]">
+    <section id="home" className="bg-[#4FA3C6]">
       <Image
         src={Clouds}
         alt="Clouds"
         height={100000}
         width={100000}
-        className="absolute opacity-100 z-0"
+        className="absolute opacity-100 z-0 -mt-10"
       />
       <div className="relative w-full flex justify-center items-center space-x-5 mr-15 pt-35">
         <div className="text-right space-y-3">
@@ -32,7 +32,7 @@ const Hero = () => {
             Interested in Software Development & <br /> Artificial
             Intelligence/Machine Learning.
           </div>
-          <div className="z-10 flex gap-8 justify-end -translate-x-5 text-kelly-pink-500">
+          <div className="relative z-10 flex gap-8 justify-end -translate-x-5 text-kelly-pink-500">
             <Link
               className="hover:text-kelly-pink-300"
               href="https://github.com/kellyma626"
@@ -77,7 +77,7 @@ const Hero = () => {
         alt="Field"
         height={100000}
         width={100000}
-        className="-my-8 relative"
+        className="relative -my-8 -mt-18 z-0"
       />
     </section>
   );
