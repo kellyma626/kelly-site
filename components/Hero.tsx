@@ -8,13 +8,13 @@ import Clouds from "@/public/cloud5.svg";
 
 const Hero = () => {
   return (
-    <section id="home" className="">
+    <section id="home" className="bg-[#7393B3]">
       <Image
         src={Clouds}
         alt="Clouds"
         height={100000}
         width={100000}
-        className="absolute opacity-50 z-0"
+        className="absolute opacity-100 z-0"
       />
       <div className="relative w-full flex justify-center items-center space-x-5 mr-15 pt-35">
         <div className="text-right space-y-3">

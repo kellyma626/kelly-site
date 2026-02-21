@@ -5,7 +5,7 @@ import { PiFlowerDuotone } from "react-icons/pi";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 w-full py-3 text-sm bg-[#F7E9ED]/80 p-10">
+    <div className="sticky top-0 z-50 w-full py-3 text-sm bg-[#F7E9ED] p-10">
       <div className="flex gap-4 justify-between">
         <ScrollLink
           to="#home"
