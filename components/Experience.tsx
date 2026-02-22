@@ -7,10 +7,10 @@ import { motion } from "motion/react";
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-kelly-sage p-15 px-50">
+    <section id="experience" className="bg-[#77b7d1] p-15 px-50">
       <div className="flex flex-col justify-center items-center mb-15">
-        <div className="text-kelly-pink-300">My timeline</div>
-        <div className="font-dmSerif text-6xl text-light">Experience</div>
+        <div className="text-kelly-sage">My timeline</div>
+        <div className="font-dmSerif text-6xl text-white">Experience</div>
       </div>
 
       <div className="relative flex flex-col origin-center w-full px-20">
@@ -20,7 +20,7 @@ const Experience = () => {
             className={`flex flex-col ${idx % 2 != 0 ? "items-end translate-x-20" : "-translate-x-20"}`}
           >
             <div
-              className={`absolute h-81 w-1 bg-kelly-pink-100 left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
+              className={`absolute h-81 w-1 bg-white left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
             />
             <motion.div
               initial={{ opacity: 0 }}
@@ -28,12 +28,8 @@ const Experience = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
-              <Image
-                src={Flower}
-                alt="Flower"
-                height={1000}
-                width={1000}
-                className={`absolute h-8 w-8 top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-23" : "translate-x-17"}`}
+              <div
+                className={`absolute h-5 w-5 bg-white rounded-full top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-22" : "translate-x-18"}`}
               />
             </motion.div>
 

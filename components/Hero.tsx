@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <section id="home" className="bg-linear-to-b from-[#A8D4E6] to-[#C0DEE8]">
+    <section id="home" className="bg-[#77b7d1]">
       <Image
         src={Clouds}
         alt="Clouds"
