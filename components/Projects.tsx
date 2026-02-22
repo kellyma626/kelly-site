@@ -1,8 +1,9 @@
+"use client";
 import Image from "next/image";
 import { projects } from "@/data/Projects";
 import { FaGithub, FaFigma } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
-
+import { motion } from "motion/react";
 import Link from "next/link";
 
 const Projects = () => {
@@ -17,9 +18,13 @@ const Projects = () => {
 
       <div className="grid grid-cols-2 gap-8 justify-center">
         {projects.map((proj, idx) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: idx * 0.15, duration: 0.5 }}
             key={idx}
-            className="bg-white rounded-xl border-2 border-kelly-pink-100 p-6 hover:shadow-xl hover:shadow-teal-900 hover:-translate-y-1 space-y-2"
+            className="bg-white rounded-xl p-6 shadow-md space-y-2 hover:scale-101"
           >
             <Image
               src={proj.img}
@@ -43,7 +48,7 @@ const Projects = () => {
             </div>
             <div className="flex space-x-2 pt-2">
               <Link
-                className="hover:text-kelly-pink-300"
+                className="hover:text-kelly-pink-300 transition-all duration-200 hover:scale-110 active:scale-90"
                 href={proj.github}
                 target="_blank"
               >
@@ -52,7 +57,7 @@ const Projects = () => {
 
               {proj.demo && proj.demo !== "#" && (
                 <Link
-                  className="hover:text-kelly-pink-300"
+                  className="hover:text-kelly-pink-300 transition-all duration-200 hover:scale-110 active:scale-90"
                   href={proj.demo}
                   target="_blank"
                 >
@@ -61,7 +66,7 @@ const Projects = () => {
               )}
               {proj.figma && proj.figma !== "#" && (
                 <Link
-                  className="hover:text-kelly-pink-300"
+                  className="hover:text-kelly-pink-300 transition-all duration-200 hover:scale-110 active:scale-90"
                   href={proj.figma}
                   target="_blank"
                 >
@@ -69,7 +74,7 @@ const Projects = () => {
                 </Link>
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

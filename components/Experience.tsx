@@ -1,7 +1,9 @@
+"use client";
 import { exp } from "@/data/Experience";
 import { CiCalendar } from "react-icons/ci";
 import Image from "next/image";
 import Flower from "@/public/flower1.svg";
+import { motion } from "motion/react";
 
 const Experience = () => {
   return (
@@ -20,7 +22,28 @@ const Experience = () => {
             <div
               className={`absolute h-81 w-1 bg-kelly-pink-100 left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
             />
-            <div className="bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] w-1/2 rounded-xl border-2 border-kelly-pink-100 p-4 space-y-1 hover:shadow-md">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+            >
+              <Image
+                src={Flower}
+                alt="Flower"
+                height={1000}
+                width={1000}
+                className={`absolute h-8 w-8 top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-23" : "translate-x-17"}`}
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: idx % 2 != 0 ? 40 : -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] w-1/2 rounded-xl p-4 space-y-1 shadow-md hover:scale-101"
+            >
               <div className="flex justify-between">
                 <Image
                   src={exp.img}
@@ -40,13 +63,6 @@ const Experience = () => {
               <div className="font-dmSerif text-2xl">{exp.role}</div>
 
               <div className="text-kelly-pink-500">{exp.company}</div>
-              <Image
-                src={Flower}
-                alt="Flower"
-                height={1000}
-                width={1000}
-                className={`absolute h-8 w-8 top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-23" : "translate-x-17"}`}
-              />
 
               <div>{exp.description}</div>
 
@@ -60,7 +76,7 @@ const Experience = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
