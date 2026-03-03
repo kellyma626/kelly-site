@@ -5,16 +5,25 @@ import { PiFlowerDuotone } from "react-icons/pi";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 w-full py-3 text-sm bg-[#F7E9ED] p-10">
-      <div className="flex gap-4 justify-between">
+    <div
+      className="
+  sticky top-0 z-50 w-full
+  bg-[#F7E9ED]
+  px-6 sm:px-10 lg:px-20
+  py-4
+  text-sm sm:text-base
+"
+    >
+      <div className="flex items-center justify-between">
         <ScrollLink
           to="#home"
-          className="flex cursor-pointer font-bold hover:text-kelly-pink-300 pl-10"
+          className="flex items-center cursor-pointer font-bold hover:text-kelly-pink-300"
         >
-          <PiFlowerDuotone size={20} className="pr-1" />
+          <PiFlowerDuotone className="mr-1 text-lg sm:text-xl" />
           <div>kelly ma</div>
         </ScrollLink>
-        <div className="flex gap-4">
+
+        <div className="flex flex-wrap gap-4 justify-end">
           {tags.map(({ name, link }, index) => (
             <ScrollLink
               key={index}

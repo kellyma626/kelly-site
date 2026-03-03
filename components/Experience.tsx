@@ -7,20 +7,33 @@ import { motion } from "motion/react";
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-kelly-sage p-15 px-50">
+    <section
+      id="experience"
+      className="bg-kelly-sage py-16 px-6 sm:px-10 md:px-16 lg:px-40"
+    >
       <div className="flex flex-col justify-center items-center mb-15">
-        <div className="text-kelly-pink-300">My timeline</div>
-        <div className="font-dmSerif text-6xl text-light">Experience</div>
+        <div className="text-kelly-pink-300 text-sm sm:text-base">
+          My timeline
+        </div>
+        <div className="font-dmSerif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-light text-center">
+          Experience
+        </div>
       </div>
 
-      <div className="relative flex flex-col origin-center w-full px-20">
+      <div className="relative flex flex-col w-full space-y-10 lg:space-y-0 lg:px-20">
         {exp.map((exp, idx) => (
           <div
             key={idx}
-            className={`flex flex-col ${idx % 2 != 0 ? "items-end translate-x-20" : "-translate-x-20"}`}
+            className={`flex flex-col ${
+              idx % 2 !== 0
+                ? "lg:items-end lg:translate-x-20"
+                : "lg:-translate-x-20"
+            }`}
           >
             <div
-              className={`absolute h-81 w-1 bg-pink-100 left-1/2 ${idx % 2 != 0 ? "-translate-x-20" : "translate-x-20"}`}
+              className={`hidden lg:block absolute h-125 w-1 bg-pink-100 left-1/2 ${
+                idx % 2 !== 0 ? "-translate-x-20" : "translate-x-20"
+              }`}
             />
             <motion.div
               initial={{ opacity: 0 }}
@@ -33,7 +46,9 @@ const Experience = () => {
                 alt="Flower"
                 height={100000}
                 width={100000}
-                className={`absolute h-8 w-8 top-1/6 left-1/2 ${idx % 2 != 0 ? "-translate-x-23" : "translate-x-17"}`}
+                className={`hidden lg:block absolute h-8 w-8 top-1/6 left-1/2 ${
+                  idx % 2 !== 0 ? "-translate-x-23" : "translate-x-17"
+                }`}
               />
             </motion.div>
 
@@ -42,7 +57,7 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] w-1/2 rounded-xl p-4 space-y-1 shadow-md hover:scale-101"
+              className="bg-[linear-gradient(180deg,#ffffff_0%,#fffbfc_100%)] w-full lg:w-1/2 rounded-xl p-4 sm:p-5 lg:p-6 space-y-1 shadow-md hover:scale-101"
             >
               <div className="flex justify-between">
                 <Image
@@ -60,7 +75,9 @@ const Experience = () => {
                 </div>
               </div>
 
-              <div className="font-dmSerif text-2xl">{exp.role}</div>
+              <div className="font-dmSerif text-lg sm:text-xl md:text-2xl">
+                {exp.role}
+              </div>
 
               <div className="text-kelly-pink-500">{exp.company}</div>
 

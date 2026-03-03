@@ -8,15 +8,18 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <section id="projects" className="relative bg-kelly-sage px-40 py-15">
+    <section
+      id="projects"
+      className="relative bg-kelly-sage py-16 px-6 sm:px-10 md:px-20 lg:px-40"
+    >
       <div className="flex flex-col justify-center items-center mb-15">
-        <div className="text-kelly-pink-300">My work</div>
-        <div className="font-dmSerif text-6xl text-light">
+        <div className="text-kelly-pink-300 text-sm sm:text-base">My work</div>
+        <div className="font-dmSerif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-light text-center">
           Featured Projects
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((proj, idx) => (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -24,19 +27,21 @@ const Projects = () => {
             viewport={{ once: true }}
             transition={{ delay: idx * 0.15, duration: 0.5 }}
             key={idx}
-            className="bg-white rounded-xl p-6 shadow-md space-y-2 hover:scale-101"
+            className="bg-white rounded-xl p-4 sm:p-6 shadow-md space-y-3 hover:scale-[1.02] transition-transform duration-300"
           >
             <Image
               src={proj.img}
               alt={proj.title}
               width={1000}
               height={1000}
-              className="rounded-xl object-contain"
+              className="rounded-xl w-full h-44 sm:h-52 md:h-60 object-cover"
             />
 
-            <div className="font-dmSerif text-3xl mt-3">{proj.title}</div>
+            <div className="font-dmSerif text-lg sm:text-xl md:text-2xl lg:text-3xl mt-3">
+              {proj.title}
+            </div>
             <div>{proj.description}</div>
-            <div className="flex -ml-1">
+            <div className="flex flex-wrap gap-2">
               {proj.tech.map((t, i) => (
                 <div
                   className="bg-kelly-pink-100 w-fit px-2 py-1 rounded-full mx-1 text-sm"
@@ -52,7 +57,7 @@ const Projects = () => {
                 href={proj.github}
                 target="_blank"
               >
-                <FaGithub size={28} />
+                <FaGithub className="text-xl sm:text-2xl md:text-3xl" />
               </Link>
 
               {proj.demo && proj.demo !== "#" && (
@@ -61,7 +66,7 @@ const Projects = () => {
                   href={proj.demo}
                   target="_blank"
                 >
-                  <IoIosLink size={28} />
+                  <IoIosLink className="text-xl sm:text-2xl md:text-3xl" />
                 </Link>
               )}
               {proj.figma && proj.figma !== "#" && (
@@ -70,7 +75,7 @@ const Projects = () => {
                   href={proj.figma}
                   target="_blank"
                 >
-                  <FaFigma size={28} />
+                  <FaFigma className="text-xl sm:text-2xl md:text-3xl" />
                 </Link>
               )}
             </div>
