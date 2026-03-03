@@ -8,9 +8,9 @@ const Page = () => {
   return (
     <div>
       <Hero />
-      <Blog />
       <Experience />
       <Projects />
+      <Blog />
       <Footer />
     </div>
   );
