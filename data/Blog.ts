@@ -5,7 +5,7 @@ export const blogs = [
     title: "Blog Title 1",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    link: "https://simoncun.vercel.app/",
+    link: "/",
   },
   {
     img: "/plants.jpg",
@@ -13,7 +13,7 @@ export const blogs = [
     title: "Blog Title 2",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    link: "https://simoncun.vercel.app/",
+    link: "/",
   },
   {
     img: "/plants.jpg",
@@ -21,6 +21,6 @@ export const blogs = [
     title: "Blog Title 3",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    link: "https://simoncun.vercel.app/",
+    link: "/",
   },
 ];

@@ -28,7 +28,7 @@ const Blog = () => {
             key={idx}
             className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:scale-[1.02] transition-transform duration-300"
           >
-            <Link href={blog.link} target="_blank" className="space-y-2">
+            <Link href={blog.link} className="space-y-2">
               <Image
                 src={blog.img}
                 alt={blog.title}

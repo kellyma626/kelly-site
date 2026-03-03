@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <section id="home" className="bg-white ">
+    <section id="home" className="bg-white">
       <Image
         src={Clouds}
         alt="Clouds"
@@ -107,7 +107,7 @@ const Hero = () => {
   w-40 h-40 
   sm:w-52 sm:h-52 
   md:w-64 md:h-64 
-  lg:w-[280px] lg:h-[280px] 
+  lg:w-70 lg:h-70
   drop-shadow-xl drop-shadow-kelly-pink-500/50 
   rounded-full
 "
@@ -120,7 +120,7 @@ const Hero = () => {
         alt="Field"
         height={100000}
         width={100000}
-        className="relative w-full h-auto md:-mt-18 z-0"
+        className="-mb-1 relative w-full h-auto md:-mt-18 z-0"
       />
     </section>
   );

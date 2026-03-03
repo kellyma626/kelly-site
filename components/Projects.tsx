@@ -52,14 +52,15 @@ const Projects = () => {
               ))}
             </div>
             <div className="flex space-x-2 pt-2">
-              <Link
-                className="hover:text-kelly-pink-300 transition-all duration-200 hover:scale-110 active:scale-90"
-                href={proj.github}
-                target="_blank"
-              >
-                <FaGithub className="text-xl sm:text-2xl md:text-3xl" />
-              </Link>
-
+              {proj.github && proj.github !== "#" && (
+                <Link
+                  className="hover:text-kelly-pink-300 transition-all duration-200 hover:scale-110 active:scale-90"
+                  href={proj.github}
+                  target="_blank"
+                >
+                  <FaGithub className="text-xl sm:text-2xl md:text-3xl" />
+                </Link>
+              )}
               {proj.demo && proj.demo !== "#" && (
                 <Link
                   className="hover:text-kelly-pink-300 transition-all duration-200 hover:scale-110 active:scale-90"
