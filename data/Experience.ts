@@ -1,13 +1,5 @@
 export const exp = [
   {
-    img: "/wf-logo9.png",
-    date: "Summer 2026",
-    role: "Software Engineer Intern",
-    company: "Wells Fargo",
-    description: "Excited to start my SWE internship at WF!",
-    tech: ["Internship"],
-  },
-  {
     img: "/btt-logo.png",
     date: "May 2025 - Present",
     role: "Artificial Intelligence Fellow",
